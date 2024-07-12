@@ -9,7 +9,7 @@ const test = () => {
 </script>
 
 <template>
-  <a-empty/>
+
   <div>点我试一下：
     <a-link @click="test">
       test
