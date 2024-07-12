@@ -1,6 +1,9 @@
 # python-webview-vue
 
-This template should help get you started developing windows gui with python + vue.
+    该项目可帮助您，快速使用python+vue构建轻量简易的桌面应用，用最易入门的技术栈，享受最丰富的技术生态。
+  
+![image](https://github.com/user-attachments/assets/1fa55f89-7ab4-4fe4-9f51-ed3a1b2dc476)
+
 
 ### Project Init
 
