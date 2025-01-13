@@ -4,10 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start-vue": "vite",
-    "start-py": ".\\.venv\\Scripts\\python index.py",
-    "build-vue": "vite build",
-    "build-py": ".\\.venv\\Scripts\\pyinstaller build.spec"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "vue": "^3.4.29"

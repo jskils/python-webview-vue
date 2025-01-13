@@ -11,7 +11,7 @@
   </div>
 </template>
 <script setup>
-import Logo from "@/assets/favicon.ico"
+import Logo from "../assets/favicon.ico"
 import {menus} from './menus.js';
 import {ref} from "vue";
 

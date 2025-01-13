@@ -3,7 +3,7 @@
 
 block_cipher = None
 added_files = [
-    ('.\\gui', 'gui'),
+    ('.\\out\\gui','gui'),
 ]
 
 a = Analysis(['.\\index.py'],
@@ -34,7 +34,7 @@ exe = EXE(pyz,
           strip=False,
           upx=True,
           upx_exclude=[],
-          icon='.\\public\\favicon.ico',
+          icon='.\\build\\favicon.ico',
           runtime_tmpdir=None,
           console=False,
           disable_windowed_traceback=False,

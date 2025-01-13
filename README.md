@@ -5,35 +5,38 @@ This template should help get you started developing windows gui with python + v
 ### Project Init
 
 ```sh
+cd frontend
 npm install
 ```
 
 ```sh
-.\.venv\Scripts\pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Project Start
 
 ```sh
-npm run start-vue
+cd frontend
+npm run dev
 ```
 
 ```sh
-npm run start-py
+python index.py
 ```
 
 ### Project Build
 
 ```sh
-npm run build-vue
+cd frontend
+npm run build
 ```
 
 ```sh
-npm run build-py
+pyinstaller build.spec
 ```
 
 ### Project Clean
 
 ```sh
-Remove-Item -Recurse -Force build, dist, gui
+Remove-Item -Recurse -Force dist,out
 ```

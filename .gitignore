@@ -3,7 +3,6 @@
 setup.cfg
 pywebview.egg-info
 MANIFEST
-build
 dist
 .cache
 .idea
@@ -20,3 +19,5 @@ venv*
 __pycache__
 .eggs
 .venv
+log
+out
