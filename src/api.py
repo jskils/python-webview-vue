@@ -1,4 +1,4 @@
-from service import test
+from src import test
 
 
 class Api:

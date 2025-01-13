@@ -38,5 +38,5 @@ pyinstaller build.spec
 ### Project Clean
 
 ```sh
-Remove-Item -Recurse -Force dist,out
+Remove-Item -Recurse -Force dist,gui
 ```

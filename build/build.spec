@@ -1,12 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
-
-
 block_cipher = None
 added_files = [
-    ('.\\out\\gui','gui'),
+    ('.\\gui','gui'),
+    ('.\\.env','.env'),
 ]
 
-a = Analysis(['.\\index.py'],
+a = Analysis(['..\\index.py'],
              pathex=['.\\dist'],
              binaries=[],
              datas=added_files,
@@ -34,7 +33,7 @@ exe = EXE(pyz,
           strip=False,
           upx=True,
           upx_exclude=[],
-          icon='.\\build\\favicon.ico',
+          icon='.\\favicon.ico',
           runtime_tmpdir=None,
           console=False,
           disable_windowed_traceback=False,

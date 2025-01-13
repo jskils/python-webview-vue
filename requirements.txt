@@ -1,1 +1,3 @@
 pywebview~=5.1
+pyinstaller
+python-dotenv~=1.0.1
