@@ -14,6 +14,6 @@ export default defineConfig({
         }
     },
     build: {
-        outDir: "../out/gui"
+        outDir: "../build/gui"
     }
 })

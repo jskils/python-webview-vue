@@ -9,10 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-router": "^4.5.0",
+    "vuetify": "^3.7.6"
   },
   "devDependencies": {
-    "@arco-design/web-vue": "^2.55.3",
     "@vitejs/plugin-vue": "^5.0.5",
     "vite": "^5.3.1"
   }

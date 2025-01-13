@@ -1,11 +1,18 @@
 import {createApp} from 'vue'
-import ArcoVue from '@arco-design/web-vue';
-import ArcoVueIcon from '@arco-design/web-vue/es/icon';
 import App from './App.vue';
-import '@arco-design/web-vue/dist/arco.css';
-import './assets/styles.css'
+import router from './router';
+import 'vuetify/styles'
+import {createVuetify} from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
 
 const app = createApp(App);
-app.use(ArcoVue);
-app.use(ArcoVueIcon);
+
+const vuetify = createVuetify({
+    components,
+    directives,
+})
+
+app.use(vuetify)
+app.use(router)
 app.mount('#app');

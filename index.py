@@ -1,26 +1,19 @@
 import logging
-import os
-
 import webview
 
-from config import *
-from api.api import Api
+from src.config import *
+from src.api import Api
 
-
-def setup_logging():
-    logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO,
-                        filename=os.path.join('log/app.log'),
-                        encoding='utf8')
-    logger = logging.getLogger()
-    console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    console_handler.setFormatter(formatter)
-    logger.addHandler(console_handler)
-
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('app.log', encoding='utf8'),
+        logging.StreamHandler()
+    ]
+)
 
 if __name__ == '__main__':
-    setup_logging()
     webview.create_window(
         f'{APP_NAME} {APP_VERSION}',
         GUI_ENTRYPOINT,
