@@ -17,7 +17,6 @@
       </a-layout-header>
       <a-layout-content class="content">
         <div class="view">
-          <context-holder/>
           <RouterView/>
         </div>
       </a-layout-content>
@@ -27,11 +26,8 @@
 <script setup>
 import {ref} from "vue";
 import {theme} from 'ant-design-vue';
-import {message} from 'ant-design-vue';
 
-const [messageApi, contextHolder] = message.useMessage();
-
-const themeConfig = {algorithm: theme.darkAlgorithm, token: {colorPrimary: '#ffffff'}}
+const themeConfig = {algorithm: theme.darkAlgorithm, token: {colorPrimary: '#ffffff', borderRadius: 2}}
 
 const selectedKeys = ref(['1']);
 
@@ -46,12 +42,11 @@ const selectedKeys = ref(['1']);
 }
 
 .content {
-  padding: 0 5px;
   margin-top: 30px;
 }
 
 .view {
-  padding: 24px;
+  padding: 24px 12px 0 12px;
   height: calc(100vh - 30px);
 }
 </style>
