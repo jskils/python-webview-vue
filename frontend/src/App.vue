@@ -46,7 +46,7 @@ const selectedKeys = ref(['1']);
 }
 
 .view {
-  padding: 24px 12px 0 12px;
+  padding: 24px 16px 0 16px;
   height: calc(100vh - 30px);
 }
 </style>

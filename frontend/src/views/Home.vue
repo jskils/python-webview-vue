@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row gap-5">
+  <div class="flex flex-row gap-4">
     <div class="basis-2/5">
       <a-card>
         <p></p>
