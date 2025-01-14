@@ -1,8 +1,8 @@
 import logging
 import webview
 
-from src.config import *
-from src.api import Api
+from main.config import *
+from main.api import Api
 
 logging.basicConfig(
     level=logging.INFO,
@@ -19,5 +19,6 @@ if __name__ == '__main__':
         GUI_ENTRYPOINT,
         js_api=Api(),
         width=APP_WIDTH,
-        height=APP_HEIGHT)
+        height=APP_HEIGHT
+    )
     webview.start(debug=IS_DEV)

@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ant-design-vue": "^4.2.6",
     "vue": "^3.4.29",
-    "vue-router": "^4.5.0",
-    "vuetify": "^3.7.6"
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",

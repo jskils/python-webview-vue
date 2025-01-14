@@ -1,5 +1,5 @@
 <template>
-sdfsdfsd
+
 </template>
 
 <style scoped>
